@@ -1,0 +1,49 @@
+#top {
+  width: 100%;
+  background-image: url('../assets/Images/Mediamodifier-Design-Template.png');
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 0px;
+}
+
+.circle {
+  position: absolute;
+  z-index: 5;
+}
+
+.circle-right {
+  background-image: url('../assets/Images/circle.svg');
+  width: 1105px;
+  height: 882px;
+  background-repeat: round;
+  top: -193px;
+  right: -207px;
+  overflow-x: hidden;
+  transform: rotate(348deg);
+}
+
+.blob-small {
+  top: 74px;
+  left: -121px;
+  width: 415px;
+  height: 616px;
+  transform: rotate(348deg);
+}
+
+#bottom {
+  background-image: url('../assets/Images/sol_wave_bg.svg');
+
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-position-y: 98px;
+  position: relative;
+  top: -30px;
+}
+
+

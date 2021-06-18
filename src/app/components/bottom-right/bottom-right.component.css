@@ -1,0 +1,49 @@
+.bottom-right-container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+    justify-content: center;
+}
+
+.bottom-line {
+    width: 117px;
+    background-color: #707070;
+    height: 5px;
+    text-align: left;
+    border-radius: 10px;
+    position: relative;
+   
+    top: -27px;
+}
+.button-open-account{
+    color: #663399;
+    border: 2px solid #663399;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    outline: none;
+    width: 270px;
+    margin-top: 80px;
+}
+.button-open-account:hover{
+    background-image: linear-gradient(
+        45deg
+        , #9F62C9 0%, #663399 100%);
+    color: white;
+    border: none;
+    outline: none;
+  
+}
+
+.bottom-right-message {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.bottom-right-description {
+  font-size: 18px;
+  color: #777777;
+}

@@ -1,0 +1,50 @@
+<div class="right-container">
+  <div class="ctn container-white">
+    <div class="white-cont-title">Eligibility Calculator</div>
+    <div class="inner-white-container">
+      <div class="monthlyIncome">
+        <p class="slider-title">Monthly Income</p>
+        <p class="slider-value">₹{{monthlyIncome}}</p>
+        <mat-slider color="primary" min="100000" max="300000" step="1" (change)="onChangeIncome($event)"></mat-slider>
+        <div class="value-container">
+          <span class="value left">₹1,00,000</span>
+          <span class="value right">₹3,00,000</span>
+        </div>
+      </div>
+      <div class="monthlyExpense">
+        <p class="slider-title">Monthly Expense</p>
+        <p class="slider-value">₹{{monthlyExpense}}</p>
+        <mat-slider color="primary" min="100000" max="300000" step="1" (change)="onChangeExpense($event)"></mat-slider>
+      </div>
+      <div class="monthlyExpense">
+        <p class="slider-title">Repayment Tenure</p>
+        <mat-form-field color="primary">
+          <mat-label>Select Months</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let month of months" [value]="month.value">
+              {{month.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="question">
+          <span class="slider-title">Do you have any exsiting loan?</span>
+          <span> <mat-slide-toggle color="primary"></mat-slide-toggle> </span>
+      </div>
+      <div class="optional mt-3">
+        <span class="slider-title">EMI of existing loan (optional)</span>
+        <span><input class="emi-optional" type="text" name="" id="" placeholder="₹15,000"> </span>
+    </div>
+    </div>
+  </div>
+  <div class="ctn container-purple">
+   <div class="purple-title">Loan Amount</div>
+   <div class="purple-price">₹1,00,000</div>
+   <div class="purple-title mt-3">Your EMI will be</div>
+   <div class="purple-price">₹15,000</div>
+   <button class="get-money-button mt-3">GET MONEY</button>
+  </div>
+  <img class="accounting-dots-right" src="../../../assets/Images/accounting_dots.svg" alt="accounting-dots">
+
+
+</div>
